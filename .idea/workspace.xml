@@ -5,44 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3d7f8c1c-eb14-45b1-9715-0e893bf45109" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/androidTest/java/com/example/calculatortask/ExampleInstrumentedTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/java/com/example/calculatortask/MainActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/java/com/example/calculatortask/ui/theme/Color.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/java/com/example/calculatortask/ui/theme/Theme.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/java/com/example/calculatortask/ui/theme/Type.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-anydpi/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-anydpi/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/app/src/test/java/com/example/calculatortask/ExampleUnitTest.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/CalculatorTask/settings.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
