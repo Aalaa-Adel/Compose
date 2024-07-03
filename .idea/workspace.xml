@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3d7f8c1c-eb14-45b1-9715-0e893bf45109" name="Changes" comment="">
+    <list default="true" id="ac7ed8b2-7dca-4a2a-a1c0-432fa2a44513" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -27,7 +30,7 @@
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 3
 }]]></component>
-  <component name="ProjectId" id="2iQrOkIe28t0BFmVbXCjydRmL9Z" />
+  <component name="ProjectId" id="2icZ7rwqk662Ejn9oDyPZQaRZhN" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -47,7 +50,7 @@
 }]]></component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
-      <module name="Login_Task.app.main" />
+      <module name="Canvas_Task.app.main" />
       <option name="DEPLOY" value="true" />
       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
       <option name="DEPLOY_AS_INSTANT" value="false" />
@@ -117,11 +120,11 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="3d7f8c1c-eb14-45b1-9715-0e893bf45109" name="Changes" comment="" />
-      <created>1719433611869</created>
+      <changelist id="ac7ed8b2-7dca-4a2a-a1c0-432fa2a44513" name="Changes" comment="" />
+      <created>1719791662500</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1719433611869</updated>
+      <updated>1719791662500</updated>
     </task>
     <servers />
   </component>
