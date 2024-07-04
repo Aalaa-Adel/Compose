@@ -5,7 +5,9 @@ import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.compose.foundation.Canvas
+import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,6 +16,7 @@ import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.geometry.CornerRadius
 import androidx.compose.ui.geometry.Offset
@@ -23,6 +26,8 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Path
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.drawscope.Stroke
+import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.aalaa.canvastask.ui.theme.CanvasTaskTheme
@@ -37,12 +42,21 @@ class MainActivity : ComponentActivity() {
                     .padding(8.dp)
                     .background(Color.LightGray)
             ) {
-//                Row {
-//                    InstagramIcon()
-//                    MessengerIcon()
-//                    GetWeatherApp()
-//                    GetGooglePhotosIcon()
-//                }
+                val borderColors = listOf(Color.Yellow, Color.Red, Color.Magenta)
+
+                RoundedImageWithBorder(
+                    image = R.drawable.ic_launcher_background,
+                    borderColor = borderColors,
+                    modifier = Modifier
+                        .size(120.dp)
+                        .padding(16.dp)
+                )
+                Row {
+                    InstagramIcon()
+                    MessengerIcon()
+                    GetWeatherApp()
+                    GetGooglePhotosIcon()
+                }
                 Canvas()
             }
         }
@@ -270,5 +284,36 @@ fun GetWeatherApp() {
             center = Offset(width.times(.35f), height.times(.35f))
         )
         drawPath(path = path, color = Color.White.copy(alpha = .90f))
+    }
+}
+
+
+@Composable
+fun RoundedImageWithBorder(
+    image: Int, // Resource ID for the image
+    borderColor: List<Color>, // List of colors for the border gradient
+    modifier: Modifier = Modifier,
+) {
+    Box(modifier = modifier) {
+        // Canvas drawing for the circular border
+        Canvas(modifier = Modifier.matchParentSize()) {
+            val circleRadius = size.minDimension / 2
+            drawCircle(
+                brush = Brush.linearGradient(colors = borderColor),
+                radius = circleRadius,
+                style = Stroke(width = 8.dp.toPx(), cap = StrokeCap.Round)
+            )
+        }
+
+        // Image inside the circular border
+        Image(
+            painter = painterResource(id = image),
+            contentDescription = "Profile Picture",
+            modifier = Modifier
+                .size(100.dp) // Adjust size as needed
+                .align(Alignment.Center)
+                .padding(8.dp), // Adjust padding as needed
+            contentScale = ContentScale.Crop
+        )
     }
 }
