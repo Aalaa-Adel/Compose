@@ -279,7 +279,7 @@ fun ProfileSection(
                 Canvas(
                     modifier = Modifier
                         .matchParentSize()
-                        .padding(7.dp)
+                        .padding(8.dp)
                 ) {
                     drawCircle(
                         brush = Brush.linearGradient(colors = instColors),
@@ -291,17 +291,17 @@ fun ProfileSection(
                     modifier = Modifier
                         .size(100.dp)
                         .align(Alignment.Center)
-                        .padding(8.dp),
+                        .padding(9.dp),
                 )
             }
             Spacer(modifier = Modifier.width(16.dp))
             StatSection(modifier = Modifier.weight(7f))
         }
         ProfileDescription(
-            displayName = "Mobile Developer \uD83D\uDE0A\uD83C\uDF38",
-            description = "2 years of coding experience\n" + "Want me to make your app? Send me an email!\n" + "Follow my LinkedIn profile.",
+            displayName = "Otaku \uD83D\uDE0A\uD83C\uDF38",
+            description =  "Passionate about anime\n" + "Connect with me on LinkedIn to discuss the latest in anime.",
             url = "https://www.linkedin.com/in/aalaa-adel",
-            followedBy = listOf("TotaAhmed", "MennaAdel"),
+            followedBy = listOf("Hunter x Hunter", "Attack on Titan"),
             otherCount = 26
         )
     }
@@ -322,7 +322,7 @@ fun RoundImage(
                 color = Color.LightGray,
                 shape = CircleShape
             )
-            .padding(1.dp)
+            .padding(4.dp)
             .clip(CircleShape),
         contentScale = ContentScale.Crop
     )
@@ -513,7 +513,8 @@ fun HighlightSection(
             ) {
                 RoundImage(image = highlights[it].image,
                     modifier = Modifier
-                        .size(68.dp)
+                        .padding(3.dp)
+                        .size(80.dp)
                         .clickable { }
                 )
                 Text(
