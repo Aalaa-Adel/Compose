@@ -71,8 +71,8 @@ fun Circle() {
             .padding(5.dp)
     ) {
         drawCircle(
-            color = Aqua,
-            style = Stroke(width = 20f)
+            color =Color(0xFF352264),
+            style = Stroke(width = 30f)
         )
     }
 }
@@ -85,15 +85,15 @@ fun Cross() {
             .padding(5.dp)
     ) {
         drawLine(
-            color = GreenishYellow,
-            strokeWidth = 20f,
+            color =Color(0xFFE01F9A),
+            strokeWidth = 30f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = 0f),
             end = Offset(x = size.width, y = size.height)
         )
         drawLine(
-            color = GreenishYellow,
-            strokeWidth = 20f,
+            color =Color(0xFFE01F9A),
+            strokeWidth = 30f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = size.height),
             end = Offset(x = size.width, y = 0f)
@@ -108,8 +108,8 @@ fun WinVerticalLine1() {
         modifier = Modifier.size(300.dp)
     ) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = size.width * 1 / 6, y = 0f),
             end = Offset(x = size.width * 1 / 6, y = size.height)
@@ -124,8 +124,8 @@ fun WinVerticalLine2() {
         modifier = Modifier.size(300.dp)
     ) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = size.width * 1 / 2, y = 0f),
             end = Offset(x = size.width * 1 / 2, y = size.height)
@@ -139,8 +139,8 @@ fun WinVerticalLine3() {
         modifier = Modifier.size(300.dp)
     ) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = size.width * 5 / 6, y = 0f),
             end = Offset(x = size.width * 5 / 6, y = size.height)
@@ -152,8 +152,8 @@ fun WinVerticalLine3() {
 fun WinHorizontalLine1() {
     Canvas(modifier = Modifier.size(300.dp)) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = size.height * 1 / 6),
             end = Offset(x = size.width, y = size.height * 1 / 6)
@@ -165,8 +165,8 @@ fun WinHorizontalLine1() {
 fun WinHorizontalLine2() {
     Canvas(modifier = Modifier.size(300.dp)) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = size.height * 1 / 2),
             end = Offset(x = size.width, y = size.height * 1 / 2)
@@ -178,8 +178,8 @@ fun WinHorizontalLine2() {
 fun WinHorizontalLine3() {
     Canvas(modifier = Modifier.size(300.dp)) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = size.height * 5 / 6),
             end = Offset(x = size.width, y = size.height * 5 / 6)
@@ -194,8 +194,8 @@ fun WinDiagonalLine1() {
         modifier = Modifier.size(300.dp)
     ) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = 0f),
             end = Offset(x = size.width, y = size.height)
@@ -209,8 +209,8 @@ fun WinDiagonalLine2() {
         modifier = Modifier.size(300.dp)
     ) {
         drawLine(
-            color = Color.Red,
-            strokeWidth = 10f,
+            color =Color(0xFF4C5523),
+            strokeWidth = 20f,
             cap = StrokeCap.Round,
             start = Offset(x = 0f, y = size.height),
             end = Offset(x = size.width, y = 0f)

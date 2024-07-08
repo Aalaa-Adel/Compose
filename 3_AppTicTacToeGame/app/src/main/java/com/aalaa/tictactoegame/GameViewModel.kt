@@ -3,6 +3,7 @@ package com.aalaa.tictactoegame
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
 import androidx.compose.runtime.setValue
+import androidx.compose.ui.graphics.Color
 import androidx.lifecycle.ViewModel
 
 class GameViewModel : ViewModel() {
@@ -39,12 +40,12 @@ class GameViewModel : ViewModel() {
         }
         state = state.copy(
             hintText = "Player 'O' turn",
+            color = Color.Black,
             currentTurn = BoardCellValue.CIRCLE,
             victoryType = VictoryType.NONE,
             hasWon = false
         )
     }
-
 
 
     private fun addValueToBoard(cellNo: Int) {
@@ -56,6 +57,7 @@ class GameViewModel : ViewModel() {
             if (checkForVictory(BoardCellValue.CIRCLE)) {
                 state = state.copy(
                     hintText = "Player 'O' Won",
+                    color = Color(0xFF3D1D8F),
                     playerCircleCount = state.playerCircleCount + 1,
                     currentTurn = BoardCellValue.NONE,
                     hasWon = true
@@ -63,11 +65,13 @@ class GameViewModel : ViewModel() {
             } else if (hasBoardFull()) {
                 state = state.copy(
                     hintText = "Game Draw",
+                    color = Color.Black,
                     drawCount = state.drawCount + 1
                 )
             } else {
                 state = state.copy(
                     hintText = "Player 'X' turn",
+                    color = Color.Black,
                     currentTurn = BoardCellValue.CROSS
                 )
             }
@@ -76,6 +80,7 @@ class GameViewModel : ViewModel() {
             if (checkForVictory(BoardCellValue.CROSS)) {
                 state = state.copy(
                     hintText = "Player 'X' Won",
+                    color = Color(0xFFE01F9A),
                     playerCrossCount = state.playerCrossCount + 1,
                     currentTurn = BoardCellValue.NONE,
                     hasWon = true
@@ -83,11 +88,13 @@ class GameViewModel : ViewModel() {
             } else if (hasBoardFull()) {
                 state = state.copy(
                     hintText = "Game Draw",
+                    color = Color.Black,
                     drawCount = state.drawCount + 1
                 )
             } else {
                 state = state.copy(
                     hintText = "Player 'O' turn",
+                    color = Color.Black,
                     currentTurn = BoardCellValue.CIRCLE
                 )
             }
@@ -100,34 +107,42 @@ class GameViewModel : ViewModel() {
                 state = state.copy(victoryType = VictoryType.HORIZONTAL1)
                 return true
             }
+
             boardItems[4] == boardValue && boardItems[5] == boardValue && boardItems[6] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.HORIZONTAL2)
                 return true
             }
+
             boardItems[7] == boardValue && boardItems[8] == boardValue && boardItems[9] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.HORIZONTAL3)
                 return true
             }
+
             boardItems[1] == boardValue && boardItems[4] == boardValue && boardItems[7] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.VERTICAL1)
                 return true
             }
+
             boardItems[2] == boardValue && boardItems[5] == boardValue && boardItems[8] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.VERTICAL2)
                 return true
             }
+
             boardItems[3] == boardValue && boardItems[6] == boardValue && boardItems[9] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.VERTICAL3)
                 return true
             }
+
             boardItems[1] == boardValue && boardItems[5] == boardValue && boardItems[9] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.DIAGONAL1)
                 return true
             }
+
             boardItems[3] == boardValue && boardItems[5] == boardValue && boardItems[7] == boardValue -> {
                 state = state.copy(victoryType = VictoryType.DIAGONAL2)
                 return true
             }
+
             else -> return false
         }
     }

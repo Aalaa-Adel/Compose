@@ -47,7 +47,7 @@ fun GameScreen(
     Column(
         modifier = Modifier
             .fillMaxSize()
-            .background(GrayBackground)
+            .background(Color(0xFFEAE2FD))
             .padding(horizontal = 30.dp),
         horizontalAlignment = Alignment.CenterHorizontally,
         verticalArrangement = Arrangement.SpaceEvenly
@@ -57,16 +57,24 @@ fun GameScreen(
             horizontalArrangement = Arrangement.SpaceBetween,
             verticalAlignment = Alignment.CenterVertically
         ) {
-            Text(text = "Player 'O' : ${state.playerCircleCount}", fontSize = 16.sp)
-            Text(text = "Draw : ${state.drawCount}", fontSize = 16.sp)
-            Text(text = "Player 'X' : ${state.playerCrossCount}", fontSize = 16.sp)
+            Text(
+                text = "Player 'O' : ${state.playerCircleCount}",
+                fontSize = 22.sp,
+                color = Color(0xFF3D1D8F)
+            )
+            Text(text = "Draw : ${state.drawCount}", fontSize = 18.sp)
+            Text(
+                text = "Player 'X' : ${state.playerCrossCount}",
+                fontSize = 22.sp,
+                color = Color(0xFFE01F9A)
+            )
         }
         Text(
             text = "Tic Tac Toe",
             fontSize = 50.sp,
             fontWeight = FontWeight.Bold,
             fontFamily = FontFamily.Cursive,
-            color = BlueCustom
+            color = Color(0xFF8447B9)
         )
         Box(
             modifier = Modifier
@@ -77,7 +85,7 @@ fun GameScreen(
                     shape = RoundedCornerShape(20.dp)
                 )
                 .clip(RoundedCornerShape(20.dp))
-                .background(GrayBackground),
+                .background(Color(0xFFECE7FC)),
             contentAlignment = Alignment.Center
         ) {
             BoardBase()
@@ -108,7 +116,7 @@ fun GameScreen(
                                 visible = viewModel.boardItems[cellNo] != BoardCellValue.NONE,
                                 enter = scaleIn(tween(1000)),
 
-                            ) {
+                                ) {
                                 if (boardCellValue == BoardCellValue.CIRCLE) {
                                     Circle()
                                 } else if (boardCellValue == BoardCellValue.CROSS) {
@@ -143,6 +151,7 @@ fun GameScreen(
         ) {
             Text(
                 text = state.hintText,
+                color = state.color,
                 fontSize = 24.sp,
                 fontStyle = FontStyle.Italic
             )
@@ -155,8 +164,8 @@ fun GameScreen(
                 shape = RoundedCornerShape(5.dp),
                 elevation = ButtonDefaults.buttonElevation(5.dp),
                 colors = ButtonDefaults.buttonColors(
-                    containerColor = BlueCustom,
-                    contentColor = Color.White
+                    containerColor = Color(0xFF8447B9),
+                    contentColor = Color(0xFFECE7FC)
                 )
             ) {
                 Text(

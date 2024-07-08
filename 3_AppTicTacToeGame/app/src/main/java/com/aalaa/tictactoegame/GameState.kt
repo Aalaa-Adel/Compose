@@ -1,5 +1,7 @@
 package com.aalaa.tictactoegame
 
+import androidx.compose.ui.graphics.Color
+
 data class GameState(
     val playerCircleCount: Int = 0,
     val playerCrossCount: Int = 0,
@@ -7,7 +9,8 @@ data class GameState(
     val hintText: String = "Player 'O' turn",
     val currentTurn: BoardCellValue = BoardCellValue.CIRCLE,
     val victoryType: VictoryType = VictoryType.NONE,
-    val hasWon: Boolean = false
+    val hasWon: Boolean = false,
+    val color:Color = Color.Black
 )
 
 
